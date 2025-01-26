@@ -33,7 +33,7 @@ def interp2d(temperature, teff, logampl, flarea, tflaremax):
 
 
 def main(teffstar, flarea):
-    data = np.load("ftempgrid2.npz")
+    data = np.load("ftempgrid.npz")
 
     amplerrint = 10**interp2d(teffstar, data['teff'], data['famplog'], flarea, data['famplerrlog'])
     interptemp = interp2d(teffstar, data['teff'], data['famplog'], flarea, data['tflaremax'])

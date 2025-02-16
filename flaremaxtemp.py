@@ -58,6 +58,8 @@ if __name__ == "__main__":
         for arg in argv[1:]:
             if "-teff=" in arg:
                 teffstar = float(arg.split("=")[1])
+                if teffstar > 4600:
+                    raise ValueError("Effective temperature of the star must be less than 4600 K.")
             elif "-ampl=" in arg:
                 flarea = float(arg.split("=")[1])
             elif arg == "-h" or arg == "--help":

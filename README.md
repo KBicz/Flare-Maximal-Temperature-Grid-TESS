@@ -1,4 +1,4 @@
-Software allowing interpolation of the peak black-body flare temperature using the normalized peak flare amplitude, and effective temperature of the star. The grid is designed for use with main-sequence stars that have temperatures ranging from 2700 K to 4600 K.
+Software allowing interpolation of the peak black-body flare temperature using the normalized peak flare amplitude, and effective temperature of the star. The grid is designed for use with main-sequence stars that have temperatures ranging from 2700 K to 4600 K (or spectral type up to K4V).
 
   Usage: flaremaxtemp.py <-teff=float> <-ampl=float>
 
